@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+	background-image:url(images//background.jpg);
+	background-size:cover;
+	}
+	.loginpage{
+		position:absolute;
+		left:500px;
+	}
+	.user{
+	width:400px;
+	padding-top:50px;
+	text-align:center;
+	height:400px;
+	left:0px;
+	margin:auto;
+	margin-top:50px;
+	border:5px solid black;
+	border-radius:25px;
+	background-color:rgba(0,0,0,0.3);
+	box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+	}
+	.sign-up{
+	width:100px;
+	border:2px solid black;
+	text-align:center;
+	height:30px;
+	margin:auto;
+	background-image:linear-gradient(yellow,gray,lightblue);
+	padding-top:5px;
+	}
+	input{
+	margin-bottom:30px;
+	}
+	.submit{
+	border:3px solid black;
+	background-color:lightyellow;
+	border-radius:8px;
+	margin-top:20px;
+	}
+</style>
+</head>
+<body>
+		<form action="loginconnect.jsp">
+			<div class="loginpage">
+				<div class="user">
+					<h2 style="border-bottom:3px;margin-bottom:40px;"><font size="6">Login</font></h2>
+					<font size="5">User Name: </font><input type="text" name="name" placeholder="enter name"><br>
+					<font size="5">Password: </font><input type="password" name="password" placeholder="enter password"><br>
+					<button class="submit"><font size="4">Submit</font></button>
+				</div>
+				<p style="margin:auto;color:yellow;padding-left:130px;margin-top:20px;margin-bottom:20px;" ><font size="6"><i>----OR----</i></font></p>
+				<div class="sign-up">
+					<font size="5"><a style="color:white;text-decoration:none;padding-top:6px;" href="register.html">Sign-Up</a></font>
+				</div>
+			</div>
+		</form>
+		
+</body>
+</html>

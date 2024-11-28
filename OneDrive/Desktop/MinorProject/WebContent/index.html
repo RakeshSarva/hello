@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <style>
+ 	html,body{
+ 		width:100%;
+ 		height:100%;
+ 		background-color: #1366b4;
+ 	}
+ 	.maindiv{
+ 		width:70%;
+ 		height:100%;
+ 		
+ 	}
+ 	
+ 	.panel{
+ 		width:50%;
+ 		height:8%;
+ 		display:flex;
+ 		margin-left:78%;
+ 		border:2px solid black;
+ 		border-radius:10px;
+ 		padding-left:20px;
+ 		justify-content:center;
+ 		align-items:center;
+ 		background-color:#F8F8FF;
+ 		padding-top:15px;
+ 		margin-top:50px;
+ 		
+ 	}
+ 	.admin,.login,.user{
+ 		width:30%;
+ 		height:95%;
+ 		color:white;
+ 		margin:5px;
+ 		margin-right:0px;	
+ 	}
+ 	.admin{
+ 		margin-left:40px;
+ 	}
+ 	.panel button{
+ 		border-radius:20%;
+ 		background-color:#3b33cc;
+ 		
+ 	}
+ 	.mainimg{
+ 		width:120%;
+ 		height:80%;
+ 		display:flex;
+ 		justify-content:center;
+ 		box-shadow: 7px 7px 14px rgb(59, 57, 57);
+ 		margin-left:10%;
+ 		margin-top:5%;
+ 	}
+ 	img{
+ 		width:100%;
+ 		height:100%;
+ 	}
+ 	.bottomblock{
+ 	width:140%;
+ 	height:90%;
+ 	color:white;
+ 	display:flex;
+ 	margin-top:5%;
+ 	}
+ 	.features{
+ 	width:30%;
+ 	height:75%;
+ 	background-color:#423e42;
+ 	border:2px solid black;
+ 	padding:10px;
+ 	margin-left:1%;
+ 	justify-items:center;
+ 	}
+ 	.sidecontent{
+ 	widht:120%;
+ 	height:fit-content;
+ 	background-color: #423e42;
+ 	border:2px solid black;
+ 	margin-left:1%;
+ 	color:white;
+ 	}
+ 	button{
+ 	margin:5px;
+ 	margin-bottom:8px;
+ 	background-color:#FFFF99;
+ 	box-shadow: 5px 5px 10px rgb(82, 80, 80);
+ 	color:white;
+ 	padding:3px;
+ 	}
+ 	.body1{
+ 	margin:10px;
+ 	min-widht:800px;
+ 	max-width:1100px;
+ 	}
+ 	.basics{
+ 	background-color:#cd9e52;
+ 	border:2px solid black;
+ 	margin:10px;
+ 	padding-top:10px;
+ 	padding-bottom:10px;
+ 	box-shadow: 5px 5px 10px rgb(176, 172, 172);
+ 	text-align:center;
+ 	}
+ 	
+ </style>
+</head>
+<body>
+	<div class="maindiv">
+		<div class="panel">
+				<div class="admin">
+					<button><a style="text-decoration:none;color:white;" href="adminverify.html"><font size="4"> Admin</font></a> </button>
+				</div>
+				<div class="user">
+					<button><a style="text-decoration:none;color:white;" href="userverify.html"><font size="4">User</font> </a> </button>
+				</div>
+				<div  class="login">
+					<button><a style="text-decoration:none;color:white;" href="login.html"><font size="4">Login</font> </a> </button>
+				</div>
+		</div>
+		<div class="mainimg">
+			<img  alt="can't find" src="images/recommandation.jpg">
+		</div>
+		
+			<div class="bottomblock">
+					<div class="features">
+									<p style="text-align:center;" ><font size="10">Basic Details</font></p>
+								<div class="basics">
+								<button><a style="color:black;text-decoration:none;" href="impPanels.html"><font size="4">What are important panels of site</font></a></button><br>
+								<button><a style="color:black;text-decoration:none;" href="demoadditems.html"><font size="4">How to add items to website</font></a></button><br>
+								<button><a style="color:black;text-decoration:none;" href="minimumdetails.html"><font size="4">Minimum details to add items</font></a></button><br>
+								<button><a style="color:black;text-decoration:none;" href="howtosearch.html"><font size="4">How to search items</font></a></button><br>
+								<button><a style="color:black;text-decoration:none;" href="itemspriority.html"><font size="4">Items priority order</font></a></button><br>
+								</div>
+								<p><font size="5">This are the main things which can describe the machanisms , features , basic requires and few other important info about this website. </p></font>
+					</div>
+					<div class="sidecontent">
+							<div class="heading">
+							<h3 style="margin-left:10px;"><font size="8">Welcome to get recommendation</h3></font>
+							</div><hr/>
+							<div class="body1">
+								<p><font size="5">
+										Nowadays, a big part of people rely on available content in social media in their decisions (e.g reviews and feedback on a topic or product).
+										 The possibility that anybody can leave a review provide a golden opportunity for spammers to write spam reviews about products
+										  and services for different interests. Identifying these spammers and the spam content is a hot topic of research and although a considerable 
+										  number of studies have been done recently toward this end, but so far the methodologies put forth still barely detect spam reviews, and none 
+										  of them show the importance of each extracted feature type. In this study, we propose a novel framework, named NetSpam, which utilizes spam 
+										  features for modeling review datasets as heterogeneous information networks to map spam detection procedure into a classification problem in
+										   such networks. Using the importance of spam features help us to obtain better results in terms of different metrics experimented on real-world
+										    review datasets from Yelp and Amazon websites. The results show that NetSpam outperforms the existing methods and among four categories of
+										     features, including review-behavioral, user-behavioral, reviewlinguistic, user-linguistic, the first type of features performs better than 
+										     the other categories.
+								</font></p>
+							</div>
+					</div>		
+			</div>
+	</div>
+</body>
+</html>

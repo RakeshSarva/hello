@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body{
+	background-image:url(images//registerbg.jpg);
+	background-size:cover;
+	}
+input{
+	margin-top:30px;
+	}
+font{
+	color:aqua;
+}
+.main{
+	text-align:center;
+	width:fit-content;
+	margin:auto;
+	height:fit-content;
+	display: flex;
+    flex-direction: column;
+	border:4px solid black;
+	margin:auto;
+	background-color:rgba(0,0,0,0.3);
+	box-shadow:6px 6px 12px rgba(0,0,0,0.5);
+	align-text:center;
+	border-radius:30px;
+}
+.submit{
+	width:100px;
+	height:35px;
+	padding:5px;
+	margin:auto;
+	margin-top:30px;
+	background-image:conic-gradient(pink,gray,yellow);
+	color:white;
+	font-size:20px;
+}
+</style>
+</head>
+<body>
+	<form action="registerconnect.jsp" class="form">
+		<div class="main">
+				<font style="border-bottom:5px;" size="6">Register</font><br>
+				<font size="5">First Name: <input type="text" name="firstname" placeholder="enter first name"></font><br>
+				<font size="5">Last Name: <input type="text" name="lastname" placeholder="enter last name"></font><br>
+				<font size="5">Email: <input type="email" name="email" placeholder="enter email address"></font><br>
+				<font size="5">Phone no: <input style="margin-bottom:30px;" type="number" name="phoneno" placeholder="enter mobile number"></font><br>
+				<font style="justify-content:center;"size="5">Address: <textarea name="address" rows="5" cols="80"></textarea></font><br>
+				<font size="5">Gender:</font><br>
+				<font size="5"><input style="margin-top:0px;"type="radio" name="gender" value="male">male</font>
+				<font size="5"><input style="margin-top:10px;margin-bottom:30px;"type="radio" name="gender" value="female">female</font>
+				<font size="5">Password: <input type="password" name="password" placeholder="enter password"></font><br>
+				<font size="5">Re-enter password: <input type="password" name="re_enterpassword" placeholder="enter password again"></font><br>
+				<font size="5">Upload image: <input file="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*" filechoosen="none"> </font>
+				<font size="10"><input class="submit" type="submit" value="Submit" ></font>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+		body{
+			background-image:url(images//productbg.jpg);
+			background-size:cover;
+			margin:auto;
+			}
+		input{
+			margin-top:30px;
+			}
+		font{
+			color:#FFFF00;
+		}
+		.main{
+			text-align:center;
+			width:fit-content;
+			margin:auto;
+			padding:50px;
+			height:fit-content;
+			display: flex;
+		    flex-direction: column;
+			border:4px solid black;
+			margin:auto;
+			background-color:rgba(0,0,0,0.3);
+			box-shadow:6px 6px 12px rgba(0,0,0,0.5);
+			align-text:center;
+			border-radius:30px;
+		}
+		.submit{
+			width:100px;
+			height:35px;
+			padding:5px;
+			margin:auto;
+			margin-top:30px;
+			background-image:conic-gradient(lightblue,lightgreen,gray);
+			color:white;
+			font-size:20px;
+		}
+</style>
+</head>
+<body>
+	<form method="post"  action="BasicServlet" class="form" enctype="multipart/form-data">
+		<div class="main">
+				<h2 style="text-decoration:dotted;"><font size="6">Here add the product post</font></h2>
+				<font size="5">Name: <input type="text" name="name" placeholder="enter product name"></font><br>
+				<font size="5">Item cost: <input type="number" name="cost" placeholder="enter item cost"></font><br>
+				<font size="5">Item color: <input type="text" name="color" placeholder="enter item color"></font><br>
+				<font size="5">Category: <input  type="text" name="category" placeholder="category of item"></font><br>
+				<font size="5">Quality: </font><br>
+				<select name="rating">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<font size="5">Manufacture date: <input type="date" name="mfd" placeholder="enter manufature date"></font><br>
+				<font size="5">Weight: <input type="number" name="weight" placeholder="enter weight of item"></font><br>
+				<font size="5">Upload image: <input  name="image" type="file" onchange="readURL(this)" accept="Image/*"> </font>
+				<font size="10"><input class="submit" type="submit" value="Submit" ></font>
+		</div>
+	</form>
+</body>
+</html>
